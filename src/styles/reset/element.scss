@@ -1,0 +1,28 @@
+.el-dropdown-link:focus {
+  outline: 0;
+}
+//双击不选中文字
+.el-tabs__item,
+.el-dropdown-menu__item,
+.el-menu {
+  user-select: none;
+}
+//按钮text
+.el-button.is-text:not(.is-disabled) {
+  &:hover,
+  &:focus {
+    background-color: unset !important;
+  }
+  background-color: unset !important;
+}
+//表格
+.el-table {
+  .el-table__cell {
+    .cell {
+      //图片水平垂直
+      .el-image {
+        vertical-align: middle;
+      }
+    }
+  }
+}

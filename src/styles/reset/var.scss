@@ -1,0 +1,55 @@
+/* 公共样式class */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex {
+  display: flex;
+}
+/* 鼠标手指 */
+.mouse {
+  cursor: pointer;
+}
+/* 鼠标禁用 */
+.noDrop {
+  cursor: no-drop;
+}
+/* 超出2行显示省略号 */
+.line {
+  display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+  overflow: hidden; //超出部分隐藏
+  text-overflow: ellipsis; //文本溢出部分用省略号表示
+  word-wrap: break-word;
+  -webkit-line-clamp: 2; //限制行数
+  -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+}
+.box-border-radius {
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+/* 变灰 */
+.filterGray {
+  filter: grayscale(1);
+}
+/* 首行缩进2个字符 */
+.textIndent {
+  text-indent: 2em;
+}
+.textCenter {
+  text-align: center;
+}
+.marginAuto {
+  margin: 0 auto;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.FRight {
+  float: right;
+}
