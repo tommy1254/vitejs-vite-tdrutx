@@ -2,9 +2,10 @@
   <div class="tool-bar-lf">
     ToolBarLeft
     <SvgIcon
-      icon="user"
+      icon="hamburger"
       :style="{ height: '80px', width: '80px', color: 'red' }"
     />
+    <SvgIcon icon="hamburger" />
   </div>
 </template>
 

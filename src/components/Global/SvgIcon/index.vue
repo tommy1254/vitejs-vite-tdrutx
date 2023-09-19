@@ -23,8 +23,8 @@ const props = defineProps({
     type: Object,
     default: () => {
       return {
-        width: 10,
-        height: 10,
+        width: '1em',
+        height: '1em',
         color: '',
       };
     },
