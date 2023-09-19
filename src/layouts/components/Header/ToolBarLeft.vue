@@ -1,5 +1,11 @@
 <template>
-  <div class="tool-bar-lf">ToolBarLeft <SvgIcon /></div>
+  <div class="tool-bar-lf">
+    ToolBarLeft
+    <SvgIcon
+      icon="user"
+      :style="{ height: '80px', width: '80px', color: 'red' }"
+    />
+  </div>
 </template>
 
 <script setup></script>

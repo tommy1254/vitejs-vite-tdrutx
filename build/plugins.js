@@ -29,7 +29,7 @@ export function createPlugins(viteEnv) {
     // 使用 svg 图标
     createSvgIconsPlugin({
       iconDirs: [resolve(process.cwd(), 'src/assets/icons')],
-      symbolId: 'ydl-[dir]-[name]',
+      symbolId: 'lm-[dir]-[name]',
     }),
     //自动导入组件
     Components({

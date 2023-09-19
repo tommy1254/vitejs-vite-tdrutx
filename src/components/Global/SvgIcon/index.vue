@@ -1,11 +1,5 @@
 <template>
-  <div
-    v-if="isOnlineSvg"
-    :style="{ '--svg-icon-url': `url(${icon})` }"
-    class="svg-icon svg-icon-online"
-    :class="className"
-  />
-  <svg v-if="svg" class="svg-icon" :class="svg" aria-hidden="true">
+  <svg aria-hidden="true" class="svg-icon" :class="svg" :style="style">
     <use :xlink:href="symbolId" />
   </svg>
 </template>
@@ -16,10 +10,6 @@ export default {
 </script>
 <script setup>
 const props = defineProps({
-  // SVG 图标名称或在线URL
-  svg: {
-    type: String,
-  },
   // 图标类名
   icon: {
     type: String,
@@ -29,24 +19,24 @@ const props = defineProps({
     type: String,
     default: 'lm',
   },
+  style: {
+    type: Object,
+    default: () => {
+      return {
+        width: 10,
+        height: 10,
+        color: '',
+      };
+    },
+  },
 });
-const symbolId = computed(() => `#${props.prefix}-${props.svg}`);
-const isOnlineSvg = computed(() => /^(https?:)/.test(props.icon));
+const symbolId = computed(() => `#${props.prefix}-${props.icon}`);
 </script>
 <style scoped lang="scss">
 .svg-icon {
-  width: 1em;
-  height: 1em;
+  /* width: 1em;
+  height: 1em; */
   fill: currentColor;
   overflow: hidden;
-}
-
-.svg-icon-online {
-  background-color: currentColor;
-  mask-image: var(--svg-icon-url);
-  -webkit-mask-image: var(--svg-icon-url);
-  mask-size: cover;
-  -webkit-mask-size: cover;
-  display: inline-block;
 }
 </style>
