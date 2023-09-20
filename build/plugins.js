@@ -33,6 +33,8 @@ export function createPlugins(viteEnv) {
     }),
     //自动导入组件
     Components({
+    //默认加载src/components
+      dirs: ['src/components/Global'],
       resolvers: [ElementPlusResolver()],
     }),
     // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
