@@ -1,13 +1,8 @@
 <template>
-  <svg aria-hidden="true" class="svg-icon" :class="svg" :style="style">
+  <svg aria-hidden="true" class="svg-icon" :class="icon" :style="style">
     <use :xlink:href="symbolId" />
   </svg>
 </template>
-<script>
-export default {
-  name: 'LmIcon',
-};
-</script>
 <script setup>
 const props = defineProps({
   // 图标类名
@@ -34,8 +29,6 @@ const symbolId = computed(() => `#${props.prefix}-${props.icon}`);
 </script>
 <style scoped lang="scss">
 .svg-icon {
-  /* width: 1em;
-  height: 1em; */
   fill: currentColor;
   overflow: hidden;
 }

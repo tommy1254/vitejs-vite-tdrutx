@@ -20,7 +20,4 @@ app.use(router);
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 app.use(ElementPlus);
-//全局组件
-import globalComp from '@/components/Global';
-app.use(globalComp);
 app.mount('#app');

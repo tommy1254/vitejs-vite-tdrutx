@@ -18,5 +18,10 @@ export const useApp = defineStore({
     footer: true,
   }),
   getters: {},
-  actions: {},
+  actions: {
+    // 设置全局状态
+    setAppState(...args) {
+      this.$patch({ [args[0]]: args[1] });
+    },
+  },
 });

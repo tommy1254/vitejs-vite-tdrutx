@@ -1,15 +1,16 @@
 <template>
   <div class="tool-bar-lf">
-    ToolBarLeft
-    <SvgIcon
-      icon="hamburger"
-      :style="{ height: '80px', width: '80px', color: 'red' }"
-    />
-    <SvgIcon icon="hamburger" />
+    <CollapseIcon />
+    <Breadcrumb v-if="app.breadcrumb" id="breadcrumb" />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useApp } from '@/stores/modules/app';
+import CollapseIcon from './components/CollapseIcon.vue';
+import Breadcrumb from './components/Breadcrumb.vue';
+const app = useApp();
+</script>
 
 <style scoped lang="scss">
 .tool-bar-lf {
