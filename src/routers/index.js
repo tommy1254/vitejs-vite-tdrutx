@@ -1,29 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import { shallowRef } from 'vue';
-import Layout from '@/layouts/index.vue';
-export const routes = [
-  {
-    path: '/',
-    component: Layout,
-  },
-  /* {
-    path: '/',
-    component: shallowRef(Layout),
-    redirect: '/dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        name: '首页',
-        component: () => import('@/views/dashboard.vue'),
-        meta: { title: '首页', icon: 'dashboard', hidden: true },
-      },
-    ],
-  }, */
-  //不要加name="404"
-  { path: '/:catchAll(.*)', component: () => import('@/components/404.vue') },
-];
+import routes from './modules';
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_PUBLIC_PATH),
   routes,
+  // 常规的一种做法，直接禁止滚动行为，每个页面切换时自动回到顶部
+  scrollBehavior: () => ({ left: 0, top: 0 })
 });
 export default router;

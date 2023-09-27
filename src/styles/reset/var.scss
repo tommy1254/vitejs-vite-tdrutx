@@ -6,6 +6,11 @@
 .flex {
   display: flex;
 }
+.flx-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* 鼠标手指 */
 .mouse {
   cursor: pointer;
