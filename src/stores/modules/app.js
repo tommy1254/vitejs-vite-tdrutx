@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import piniaPersistConfig from "@/config/piniaPersist";
 export const useApp = defineStore({
   id: 'app', // 必须指明唯一的pinia仓库的id
   state: () => ({
@@ -24,4 +25,5 @@ export const useApp = defineStore({
       this.$patch({ [args[0]]: args[1] });
     },
   },
+  persist: piniaPersistConfig("geeker-app")
 });

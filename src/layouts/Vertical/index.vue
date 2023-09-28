@@ -17,16 +17,13 @@
           >{{ title }}</span>
         </div>
         <el-scrollbar>
-          el-menu
-          <!-- <el-menu
+          <el-menu
             :router="false"
-            :default-active="activeMenu"logo-img
+            :default-active="activeMenu"
             :collapse="isCollapse"
-            :unique-opened="accordion"
-            :collapse-transition="false"
           >
-            <SubMenu :menu-list="menuList" />
-          </el-menu> -->
+            <MenuItem :menu-list="menuList" />
+          </el-menu>
         </el-scrollbar>
       </div>
     </el-aside>
@@ -44,10 +41,16 @@
 import ToolBarRight from '@/layouts/components/Header/ToolBarRight.vue';
 import ToolBarLeft from '@/layouts/components/Header/ToolBarLeft.vue';
 import Main from '@/layouts/components/Main/index.vue';
+import MenuItem from '@/layouts/components/Menu/index.vue';
 import { useApp } from '@/stores/modules/app';
 const title = import.meta.env.VITE_APP_NAME;
 const app = useApp();
+const route = useRoute();
 const isCollapse = computed(() => app.isCollapse);
+const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path));
+const menuList=computed(()=>{
+  return []
+})
 </script>
 
 <style scoped lang="scss">
