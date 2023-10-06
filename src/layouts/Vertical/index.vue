@@ -43,12 +43,15 @@ import ToolBarLeft from '@/layouts/components/Header/ToolBarLeft.vue';
 import Main from '@/layouts/components/Main/index.vue';
 import MenuItem from '@/layouts/components/Menu/index.vue';
 import { useApp } from '@/stores/modules/app';
+import { useMenu } from '@/stores/modules/menu';
 const title = import.meta.env.VITE_APP_NAME;
 const app = useApp();
+const menu = useMenu();
 const route = useRoute();
 const isCollapse = computed(() => app.isCollapse);
 const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path));
 const menuList=computed(()=>{
+  console.log(menu.menuList);
   return []
 })
 </script>

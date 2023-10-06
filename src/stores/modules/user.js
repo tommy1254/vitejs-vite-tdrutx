@@ -6,11 +6,13 @@ export const useUser = defineStore({
     //用户ID
     id: 1,
     //用户名
-    name: getStore('user').name || '',
+    name:'',
     //用户图片
-    avatar: getStore('user').avatar || '',
+    avatar:  '',
     //权限名称
-    role: getStore('user').role || [],
+    role:[],
+    //
+    token: "",
   }),
   getters: {},
   actions: {},
