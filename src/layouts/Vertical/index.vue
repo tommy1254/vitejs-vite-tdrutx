@@ -22,7 +22,7 @@
             :default-active="activeMenu"
             :collapse="isCollapse"
           >
-            <MenuItem :menu-list="menuList" />
+            <MenuItem v-for="item in menuList " :key="item.path"  :menu-item="item" :path="item.path"/>
           </el-menu>
         </el-scrollbar>
       </div>
@@ -48,12 +48,10 @@ const title = import.meta.env.VITE_APP_NAME;
 const app = useApp();
 const menu = useMenu();
 const route = useRoute();
+
 const isCollapse = computed(() => app.isCollapse);
 const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path));
-const menuList=computed(()=>{
-  console.log(menu.menuList);
-  return []
-})
+const menuList = computed(() => menu.menuList)
 </script>
 
 <style scoped lang="scss">

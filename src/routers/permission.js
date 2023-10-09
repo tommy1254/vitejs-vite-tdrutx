@@ -1,9 +1,13 @@
 import router from './index'; // 导入路由
 import message from '@/utils/message';
 // import { useUserAdmin } from '@/stores';
+
+import { useMenu } from '@/stores/modules/menu';
 const whiteList = ['/login'];
 //前置路由
 router.beforeEach(async (to, from, next) => {
+  const Menu = useMenu();
+  Menu.get();
   next();
   /* 
   var userName = getStore(`user`).user_name;
