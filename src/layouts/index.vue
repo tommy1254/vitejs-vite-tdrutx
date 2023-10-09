@@ -1,12 +1,12 @@
 <!-- 💥 这里是一次性加载 LayoutComponents -->
 <template>
   <component :is="LayoutComponents[layout]" />
-  <!-- <ThemeDrawer /> -->
+  <ThemeDrawer />
 </template>
 
 <script setup name="layout">
 import { useApp } from '@/stores/modules/app';
-// import ThemeDrawer from './components/ThemeDrawer/index.vue';
+import ThemeDrawer from './components/ThemeDrawer/index.vue';
 import Vertical from './Vertical/index.vue'; //纵向
 import Classic from './Classic/index.vue'; //
 import Transverse from './Transverse/index.vue';

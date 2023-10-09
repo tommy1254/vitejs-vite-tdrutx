@@ -29,11 +29,11 @@
       teleported
       :index="resolvePath(menuItem.path)"
     >
-      <SvgIcon
-        v-if="menuItem.meta?.icon"
-        :icon="menuItem.meta?.icon"
-      />
       <template #title>
+        <SvgIcon
+          v-if="menuItem.meta?.icon"
+          :icon="menuItem.meta?.icon"
+        />
         <span class="sle">{{ menuItem.meta?.title }}</span>
       </template>
       <MenuItem
@@ -110,6 +110,18 @@ const hasOneShowingChild = (children = [], parent) => {
 .el-sub-menu .el-sub-menu__title:hover {
   color: var(--el-menu-hover-text-color) !important;
   background-color: transparent !important;
+
+}
+
+.el-sub-menu {
+  display: grid;
+
+  .el-sub-menu__title {
+    .svg-icon {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
 }
 
 .el-menu--collapse {
@@ -119,17 +131,18 @@ const hasOneShowingChild = (children = [], parent) => {
       background-color: var(--el-color-primary) !important;
     }
   }
+
   .svg-icon {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  } 
+  }
 }
 
 .el-menu-item {
   .svg-icon {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  } 
+  }
 
   &:hover {
     color: var(--el-menu-hover-text-color);
@@ -177,5 +190,4 @@ const hasOneShowingChild = (children = [], parent) => {
   #driver-highlighted-element-stage {
     background-color: #606266 !important;
   }
-}
-</style>
+}</style>
