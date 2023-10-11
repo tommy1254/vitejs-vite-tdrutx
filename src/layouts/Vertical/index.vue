@@ -5,7 +5,7 @@
         class="aside-box"
         :style="{ width: isCollapse ? '65px' : '210px' }"
       >
-        <div class="logo flx-center">
+        <div class="logo flex-vertical-center">
           <img
             class="logo-img"
             src="@/assets/images/logo.svg"

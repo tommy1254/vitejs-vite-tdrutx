@@ -12,10 +12,14 @@
       </transition>
     </router-view>
   </el-main>
+  <el-footer v-if="footer">
+    <Footer />
+  </el-footer>
 </template>
 
 <script setup>
 import { storeToRefs } from 'pinia';
+import Footer from "@/layouts/components/Footer/index.vue";
 import { useApp } from '@/stores/modules/app';
 const app = useApp();
 const { maximize, isCollapse, layout, tabs, footer } = storeToRefs(app);

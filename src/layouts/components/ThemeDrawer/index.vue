@@ -60,7 +60,7 @@
           <div class="layout-content"></div>
         </div>
       </el-tooltip>
-      <el-tooltip
+       <el-tooltip
         effect="dark"
         content="分栏"
         placement="top"
@@ -108,7 +108,6 @@ const {
   tabs,
   breadcrumb,
 } = storeToRefs(app);
-console.log(layout);
 // 打开主题设置
 const drawerVisible = ref(false);
 EventMitt.on("openThemeDrawer", () => (drawerVisible.value = true));

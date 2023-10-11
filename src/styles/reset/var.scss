@@ -6,7 +6,7 @@
 .flex {
   display: flex;
 }
-.flx-center {
+.flex-vertical-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,22 +39,31 @@
   }
 }
 /* 变灰 */
-.filterGray {
+.filter-gray {
   filter: grayscale(1);
 }
 /* 首行缩进2个字符 */
-.textIndent {
+.text-indent {
   text-indent: 2em;
 }
-.textCenter {
+.text-center {
   text-align: center;
 }
-.marginAuto {
+.margin-auto {
   margin: 0 auto;
 }
-.mr5 {
+.mr-5 {
   margin-right: 5px;
 }
-.FRight {
+.float-right {
   float: right;
+}
+.main-bg {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e4e7ed;;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #0000000d;
 }

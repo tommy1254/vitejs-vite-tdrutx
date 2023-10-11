@@ -4,11 +4,19 @@
  * @Autor: 源
  * @Date: 2023-01-10 11:20:51
  * @LastEditors: 源
- * @LastEditTime: 2023-04-03 14:02:33
+ * @LastEditTime: 2023-10-11 11:33:43
  */
 import { nextTick } from 'vue';
 // 根据el获取input
-const getInput = (el) => (el ? el : el.querySelector('input'));
+function getInput(el) {
+  let inputEle
+  if (el.tagName !== 'INPUT') {
+    inputEle = el.querySelector('input')
+  } else {
+    inputEle = el
+  }
+  return inputEle
+}
 const focus = {
   mounted: async (el, { arg }) => {
     // 为了防止数据未即使更新。

@@ -1,0 +1,167 @@
+{
+  "list": [
+    {
+      "id": "453552993477881101",
+      "username": "段杰",
+      "gender": 1,
+      "user": {
+        "detail": {
+          "age": 15
+        }
+      },
+      "idCard": "453552993477881101",
+      "email": "j.equdij@tpa.bs",
+      "address": "陕西省 延安市",
+      "createTime": "1981-09-19 17:24:28",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "316358939510758514",
+      "username": "吴平",
+      "gender": 2,
+      "user": {
+        "detail": {
+          "age": 16
+        }
+      },
+      "idCard": "316358939510758514",
+      "email": "e.djtgbclks@teshxmra.中国",
+      "address": "黑龙江省 齐齐哈尔市",
+      "createTime": "2014-12-13 23:49:38",
+      "status": 1,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "839402927024784324",
+      "username": "宋霞",
+      "gender": 1,
+      "user": {
+        "detail": {
+          "age": 10
+        }
+      },
+      "idCard": "839402927024784324",
+      "email": "u.cfsllj@smmgthdflo.zr",
+      "address": "江西省 萍乡市",
+      "createTime": "2004-05-27 15:27:44",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRBHS.jpg"
+    },
+    {
+      "id": "277338176554106831",
+      "username": "侯勇",
+      "gender": 2,
+      "user": {
+        "detail": {
+          "age": 22
+        }
+      },
+      "idCard": "277338176554106831",
+      "email": "e.xgnyl@webpuicgk.ie",
+      "address": "宁夏回族自治区 中卫市",
+      "createTime": "1982-08-29 02:45:37",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "252612818975137608",
+      "username": "卢娜",
+      "gender": 1,
+      "user": {
+        "detail": {
+          "age": 20
+        }
+      },
+      "idCard": "252612818975137608",
+      "email": "w.rxbju@mann.cr",
+      "address": "澳门特别行政区 澳门半岛",
+      "createTime": "2010-10-24 11:01:08",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+    },
+    {
+      "id": "922269466652642388",
+      "username": "吴涛",
+      "gender": 2,
+      "user": {
+        "detail": {
+          "age": 28
+        }
+      },
+      "idCard": "922269466652642388",
+      "email": "f.scuijv@vmda.ch",
+      "address": "山西省 忻州市",
+      "createTime": "1994-12-28 19:08:28",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "629321721441789573",
+      "username": "姜军",
+      "gender": 2,
+      "user": {
+        "detail": {
+          "age": 21
+        }
+      },
+      "idCard": "629321721441789573",
+      "email": "a.chkp@hdcpzn.my",
+      "address": "海南省 三亚市",
+      "createTime": "1984-03-09 13:32:43",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "526684650365127677",
+      "username": "熊刚",
+      "gender": 1,
+      "user": {
+        "detail": {
+          "age": 25
+        }
+      },
+      "idCard": "526684650365127677",
+      "email": "m.arm@olgaeynbjb.mm",
+      "address": "西藏自治区 阿里地区",
+      "createTime": "1993-09-11 00:56:33",
+      "status": 1,
+      "avatar": "https://i.imgtg.com/2023/01/16/QR57a.jpg"
+    },
+    {
+      "id": "067678861017434221",
+      "username": "汪明",
+      "gender": 2,
+      "user": {
+        "detail": {
+          "age": 30
+        }
+      },
+      "idCard": "067678861017434221",
+      "email": "q.vjcjc@ublfbrrj.hn",
+      "address": "福建省 南平市",
+      "createTime": "1990-03-30 21:56:44",
+      "status": 1,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRqMK.jpg"
+    },
+    {
+      "id": "054338371399358654",
+      "username": "石刚",
+      "gender": 1,
+      "user": {
+        "detail": {
+          "age": 23
+        }
+      },
+      "idCard": "054338371399358654",
+      "email": "f.xdgdve@hvd.fm",
+      "address": "黑龙江省 佳木斯市",
+      "createTime": "2015-10-21 13:31:26",
+      "status": 0,
+      "avatar": "https://i.imgtg.com/2023/01/16/QRa0s.jpg"
+    }
+  ],
+  "pageNum": 1,
+  "pageSize": 10,
+  "total": 2000
+}

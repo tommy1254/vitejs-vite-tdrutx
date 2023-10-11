@@ -22,14 +22,14 @@ const addWaterMarker = (text, textColor, font, parentNode) => {
   let cans = can.getContext('2d');
   cans.rotate((-20 * Math.PI) / 180);
   cans.font = font || '16px Microsoft JhengHei';
-  cans.fillStyle = textColor || 'rgba(180, 180, 180, 0.3)';
+  cans.fillStyle = textColor || '#b4b4b479';
   cans.textAlign = 'left';
   cans.textBaseline = 'Middle';
   cans.fillText(text, can.width / 10, can.height / 2);
   parentNode.style.backgroundImage = 'url(' + can.toDataURL('image/png') + ')';
 };
 const waterMarker = {
-  mounted: async (e, { value }) => {
+  mounted: async (el, { value }) => {
     addWaterMarker(value.text, value.textColor, value.font, el);
   },
 };
