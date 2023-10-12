@@ -8,6 +8,7 @@ const props = defineProps({
   // 图标类名
   icon: {
     type: String,
+    required: true,
   },
   //前序
   prefix: {
