@@ -193,6 +193,7 @@ function formatTooltip(val) {
 function submit() {
   loading.value = true;
   console.log(postForm.value, imageFile.value);
+  loading.value = false;
 }
 </script>
 <style scoped lang="scss"></style>

@@ -17,7 +17,7 @@
       />
       <tinymce
         v-else-if="item.component === 'editor'"
-        :value="postForm[item.prop]"
+        v-model:value="postForm[item.prop]"
         v-bind="item.attrs"
       />
       <template v-else-if="item.component === 'date-picker'">

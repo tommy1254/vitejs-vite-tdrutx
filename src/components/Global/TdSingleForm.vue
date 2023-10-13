@@ -82,7 +82,7 @@ const props = defineProps({
   //返回路径
   returnUrl: String,
   //表单参数项
-  itemsForm: { type: Array, default: () => { }, },
+  itemsForm: { type: Array, default: () => [], },
 })
 onMounted(() => {
   //上级box高度 911 - heaerd 52 - padding 20 911-52-20=839
