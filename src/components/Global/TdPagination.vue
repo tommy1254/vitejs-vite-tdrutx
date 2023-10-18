@@ -30,17 +30,17 @@ const props = defineProps({
   },
   //总页数
   total: {
-    type: Number,
+    type: [Number,String] ,
     default: 0,
   },
   //分页组件会展示的功能项
-  total: {
-    type: string,
+  layout: {
+    type: String,
     default: "total, sizes, prev, pager, next, jumper, ->, slot",
   },
   //对齐方式
   align: {
-    type: 'left' | 'center' | 'right',
+    type: String,
     default: "right",
   },
   //指定分页展示条数
